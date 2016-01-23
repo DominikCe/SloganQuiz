@@ -35,7 +35,8 @@
                 android:layout_weight="1"
                 android:text="Hallo"
                 android:textAlignment="center"
-                android:textSize="20pt"/>
+                android:textSize="20pt"
+                android:id="@+id/lblSlogan"/>
 
         </LinearLayout>
 
@@ -49,7 +50,8 @@
             <EditText
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:id="@+id/txtInput"/>
 
         </LinearLayout>
 
@@ -65,7 +67,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="Submit"
-                android:textSize="20pt"/>
+                android:textSize="20pt"
+                android:id="@+id/buSubmit"/>
 
         </LinearLayout>
     </LinearLayout>
