@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         buSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                //here some cool button action!!!! (with explosions! *booooom*)
             }
         });
     }
