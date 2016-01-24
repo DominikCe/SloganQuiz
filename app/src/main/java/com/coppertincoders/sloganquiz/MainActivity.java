@@ -8,14 +8,34 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+    //Declare In and Outputs
+    TextView lblSlogan;
+    EditText txtInput;
+    Button buSubmit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Integrate In and Outputs
+        lblSlogan = (TextView) findViewById(R.id.lblSlogan);
+        txtInput = (EditText) findViewById(R.id.txtInput);
+        buSubmit = (Button) findViewById(R.id.buSubmit);
+
+        //Submit-button OnClick-Event
+        buSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 
     @Override
