@@ -19,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
     EditText txtInput;
     Button buSubmit;
 
+    String sAnswer = "";
+    String sSolution = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,13 +32,26 @@ public class MainActivity extends AppCompatActivity {
         txtInput = (EditText) findViewById(R.id.txtInput);
         buSubmit = (Button) findViewById(R.id.buSubmit);
 
+        sSolution = "Bauhaus";
+
         //Submit-button OnClick-Event
         buSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //here some cool button action!!!! (with explosions! *booooom*)
+                sAnswer = txtInput.getText().toString();
+                checkAnswer();
             }
         });
+    }
+
+    //Checks if the Answer is right
+    public void checkAnswer() {
+        if (sAnswer.equals(sSolution)) {
+            lblSlogan.setText("richtig");
+        } else {
+            lblSlogan.setText("FALSCH!!!");
+        }
     }
 
     @Override
